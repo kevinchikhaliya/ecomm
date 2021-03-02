@@ -106,44 +106,44 @@
                 </a>
               </li> --}}
               <li class="nav-item">
-                <a href="/poster" class="nav-link">
+                <a href="{{route('poster')}}" class="nav-link {{(Route::currentRouteName() == 'poster') ? 'active' : '' }}">
                   <i class="far fa-circle nav-icon"></i>
                   <p>poster</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="admin_category" class="nav-link">
+                <a href="{{route('category')}}" class="nav-link {{(Route::currentRouteName() == 'category') ? 'active' : '' }}">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Category</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="admin_products" class="nav-link">
+                <a href="{{route('products')}}" class="nav-link {{(Route::currentRouteName() == 'products') ? 'active' : '' }}">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Products</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="addproduct" class="nav-link">
+                <a href="{{route('addproduct')}}" class="nav-link {{(Route::currentRouteName() == 'addproduct') ? 'active' : '' }}">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Add Product</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/orderlist" class="nav-link">
+                <a href="{{route('order')}}" class="nav-link {{(Route::currentRouteName() == 'order') ? 'active' : '' }}">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Orders</p>
                 </a>
-              </li>
               <li class="nav-item">
-                <a href="/userlist" class="nav-link">
+                
+                <a href="{{route('user')}}" class="nav-link {{(Route::currentRouteName() == 'user') ? 'active' : '' }}">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Users</p>
                 </a>
               </li>
             </ul>
           </li>
-
+          {{-- @if(explode('.',Request::route()->getname()[0]=="user")){{'active'}} @endif --}}
 
 
 

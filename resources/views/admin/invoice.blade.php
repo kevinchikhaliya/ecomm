@@ -128,11 +128,14 @@ $mydate=getdate(date("U"));
                                 <tr>
                                     <th>Tax ({{$data->TAX}}%)</th>
                                     <?php 
-                                        $price=$data->price;
+                                        $price=str_replace(',','',$data->price);
+                                        //  dd($price);
                                         $tax=$data->TAX;
-                                        $taxamount=number_format($price*$tax/(100+$tax),2);
+                                        $taxamount=$price*$tax/(100+$tax);
+                                        // dd($taxamount);
+
                                     ?>
-                                    <td>₹{{$taxamount}}</td>
+                                    <td>₹{{number_format($taxamount,2) ?? '0.0'}}</td>
                                 </tr>
                                 <tr>
                                     <th>Shipping:</th>

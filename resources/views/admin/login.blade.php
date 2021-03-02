@@ -66,7 +66,7 @@
           @endforeach
       </ul>
   </div>
-@endif
+  @endif
 
   @if (Session::has('msg'))
   <div class="alert alert-warning alert-dismissible fade show" role="alert">

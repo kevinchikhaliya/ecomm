@@ -125,16 +125,16 @@ Route::middleware(['admincheck'])->group(function () {
 
     Route::view('home','admin.index');
 
-    Route::get('admin_category',[AdminController::class,'showCategory']);
+    Route::get('admin_category',[AdminController::class,'showCategory'])->name('category');
 
     Route::get('/delete/{id}',[AdminController::class,'deleteCategory']);
 
     Route::post('add_category',[admincontroller::class,'addCategory']);
 
 
-    Route::get('/admin_products',[AdminController::class,'showProduct']);
+    Route::get('/admin_products',[AdminController::class,'showProduct'])->name('products');
 
-    Route::get('/addproduct',[AdminController::class,'showaddProduct']);
+    Route::get('/addproduct',[AdminController::class,'showaddProduct'])->name('addproduct');
 
     Route::post('/add_product',[AdminController::class,'addProduct']);
 
@@ -143,17 +143,17 @@ Route::middleware(['admincheck'])->group(function () {
     Route::post('/update/{id}',[AdminController::class,'updateProduct']);
 
 
-    Route::get('/orderlist',[AdminController::class,'orderList']);
+    Route::get('/orderlist',[AdminController::class,'orderList'])->name('order');
 
-    Route::get('/poster',[AdminController::class,'poster']);
+    Route::get('/poster',[AdminController::class,'poster'])->name('poster');
 
-    Route::post('/addposter',[AdminController::class,'addPoster']);
+    Route::post('/addposter',[AdminController::class,'addPoster'])->name('addposter');
 
     Route::get('/removeposter/{id}',[AdminController::class,'removePoster']);
 
     Route::post('/orderstatus',[AdminController::class,'postStatus']);
 
-    Route::get('/userlist',[AdminController::class,'userList']);
+    Route::get('/userlist',[AdminController::class,'userList'])->name('user');
 
     Route::get('/alogout',[AdminController::class,'logout']);
 

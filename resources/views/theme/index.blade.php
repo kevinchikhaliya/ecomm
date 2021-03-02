@@ -82,21 +82,15 @@
 
     <!-- Women Banner Section Begin -->
     <section class="women-banner spad">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-3">
-                    <div class="product-large set-bg" data-setbg="img/products/women-large.jpg">
-                        <h2>Women’s</h2>
-                        <a href="#">Discover More</a>
-                    </div>
-                </div>
-                <div class="col-lg-8 offset-lg-1">
+                <div class="col-lg-12">
                     <div class="filter-control">
                         <ul>
-                            <li class="active">Clothings</li>
-                            <li>HandBag</li>
+                            <li class="active">Trending</li>
+                            {{-- <li>HandBag</li>
                             <li>Shoes</li>
-                            <li>Accessories</li>
+                            <li>Accessories</li> --}}
                         </ul>
                     </div>
                     <div class="product-slider owl-carousel">
@@ -239,7 +233,7 @@
     <section class="man-banner spad">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-8">
+                {{-- <div class="col-lg-8">
                     <div class="filter-control">
                         <ul>
                             <li class="active">Clothings</li>
@@ -346,7 +340,7 @@
                         <h2>Men’s</h2>
                         <a href="#">Discover More</a>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>
@@ -395,7 +389,7 @@
 
     <!-- Latest Blog Section Begin -->
     <section class="latest-blog spad">
-        <div class="container">
+        {{-- <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
@@ -505,7 +499,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </section>
     <!-- Latest Blog Section End -->
 

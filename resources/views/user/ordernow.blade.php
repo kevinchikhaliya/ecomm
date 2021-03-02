@@ -89,7 +89,7 @@
                                                 {{-- <input type="number" class="form-control" name="contact" pattern="[1-9]{1}[0-9]{9}" maxlength="10"> --}}
                                                 <input type="text" maxlength="10" class="form-control" name="contact"
                                                     pattern="\d{10}" title="Please enter exactly 10 digits"
-                                                    value="{{$user->contact}}" readonly autocomplete="off" />
+                                                    value="{{$user->contact}}" autocomplete="off" />
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -142,7 +142,7 @@
                                              {{-- <input type="number" class="form-control" name="contact" pattern="[1-9]{1}[0-9]{9}" maxlength="10"> --}}
                                              <input type="hidden" maxlength="10" class="form-control" name="contact"
                                                  pattern="\d{10}" title="Please enter exactly 10 digits"
-                                                 value="{{$user->contact}}" readonly autocomplete="off" />
+                                                 value="{{$user->contact}}" autocomplete="off" />
                                          </div>
                                      </div>
                                      <div class="form-group">

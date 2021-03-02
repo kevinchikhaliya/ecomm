@@ -47,7 +47,7 @@ class PayController extends Controller
             $discount_price=$price-$price*0.05;
             $order->price=number_format($discount_price,2);
             $order->payment_method="Online";
-            $order->payment_status="pending";
+            $order->payment_status="paid";
             // dd($order);
             $order->save();
         }

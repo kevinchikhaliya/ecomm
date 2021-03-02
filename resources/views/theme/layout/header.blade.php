@@ -66,7 +66,8 @@ $category=ProductController::category();
 
                           <div class="logo">
                               <a href="/">
-                                  <img src="../img/logo.png" alt="">
+                                    <h3><b>CrazyKitch</b></h3>
+                                  {{-- <img src="../img /logo.png" alt=""> --}}
                                   {{-- brand logo --}}
                               </a>
                           </div>
